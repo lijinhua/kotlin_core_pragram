@@ -1,0 +1,29 @@
+package com.core.program.ch_2
+
+2.1.2 声明函数返回值类型
+// kotlin支付单行表达式与等号的语法，叫作表达式函数体，返回值类型自动推导
+//在复杂的情况需要显示声明返回的类型，递归函数需指定返回值类型
+
+2.2 val与var的使用规则
+val声明的变量引用不可以变，但是里面的值是可以更改的
+
+
+2.3高阶函数与Lambda 查看c_3_lambdaAndroid与lambda
+/**
+ * (Int) ->Unit
+ * 左边是参数类型   右边是返回值类型
+ * 必须用括号包起来
+ * 返回值类型也必须显示声明
+ * ()->Unit
+ * (Int,String) -> Unit
+ * 指定参数
+ * (errCode:Int,errMsg:String) ->Unit
+ * ((errCode:Int,errMsg:String) ->Unit)?表示整个函数变成了可选
+ *
+ * 高阶函数还支持返回另一个函数
+ * (Int)->((Int)->Unit)
+ * 表示传入一个类型为Int的参数 ，然后返回另一个类型为(Int)->Unit的函数，简化它的形式 (Int)->Int->Unit
+ *
+ * ((Int)->(Int))->Unit
+ * 表示传一个函数类型的参数，返回一个Unit
+ */
