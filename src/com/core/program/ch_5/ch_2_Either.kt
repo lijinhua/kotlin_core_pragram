@@ -12,6 +12,9 @@ package com.core.program.ch_5
  *      run、with、let、also与apply
  *      https://blog.csdn.net/u013064109/article/details/78786646
  *      https://zhuanlan.zhihu.com/p/37085876
+
+ *  }
+ *
  */
 sealed class Either<A, B>() {
     class Left<A, B>(val value: A) : Either<A, B>()
